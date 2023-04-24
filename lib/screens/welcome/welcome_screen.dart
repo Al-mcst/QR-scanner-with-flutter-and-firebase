@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../responsive.dart';
-import '../../mobile_app/background.dart';
-import '../../mobile_app/login_signup.dart';
-import '../../mobile_app/welcome_theme.dart';
+import 'package:watcher_app/responsive.dart';
+import 'package:watcher_app/controllers/background.dart';
+import 'login_signup.dart';
+import 'welcome_theme.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -25,7 +25,7 @@ class WelcomeScreen extends StatelessWidget {
                     children: const [
                       SizedBox(
                         width: 450,
-                        child: LoginAndSignupBtn(),
+                        child: LoginAndSignup(),
                       ),
                     ],
                   ),
@@ -56,7 +56,7 @@ class MobileWelcomeScreen extends StatelessWidget {
             Spacer(),
             Expanded(
               flex: 8,
-              child: LoginAndSignupBtn(),
+              child: LoginAndSignup(),
             ),
             Spacer(),
           ],

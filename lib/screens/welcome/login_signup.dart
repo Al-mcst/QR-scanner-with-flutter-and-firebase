@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import '../../../constants.dart';
-import '../../mobile_app/login_screen.dart';
-import '../../mobile_app/signup_screen.dart';
+import 'login_screen.dart';
+import 'signup_screen.dart';
 
-class LoginAndSignupBtn extends StatelessWidget {
-  const LoginAndSignupBtn({
+class LoginAndSignup extends StatelessWidget {
+  const LoginAndSignup({
     Key? key,
   }) : super(key: key);
 
@@ -13,14 +13,14 @@ class LoginAndSignupBtn extends StatelessWidget {
     return Column(
       children: [
         Hero(
-          tag: "login_btn",
+          tag: "loginButton",
           child: ElevatedButton(
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return LoginScreen();
+                    return const LoginScreen();
                   },
                 ),
               );
@@ -37,7 +37,7 @@ class LoginAndSignupBtn extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return SignUpScreen();
+                  return const SignUpScreen();
                 },
               ),
             );

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:watcher_app/responsive.dart';
-import '../../mobile_app/background.dart';
-import '../../mobile_app/login_form.dart';
-import '../../mobile_app/login_theme.dart';
+import 'package:watcher_app/controllers/background.dart';
+import 'login_form.dart';
+import 'login_theme.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class LoginScreen extends StatelessWidget {
               Expanded(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     SizedBox(
                       width: 450,
                       child: LoginForm(),
@@ -49,13 +49,13 @@ class MobileLoginScreen extends StatelessWidget {
       children: <Widget>[
         const LoginScreenTopImage(),
         Row(
-          children: const [
-            Spacer(),
+          children: [
+            const Spacer(),
             Expanded(
               flex: 8,
               child: LoginForm(),
             ),
-            Spacer(),
+            const Spacer(),
           ],
         ),
       ],

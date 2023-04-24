@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:watcher_app/constants.dart';
 import 'package:watcher_app/responsive.dart';
-import '../../mobile_app/background.dart';
-import '../../mobile_app/signup_theme.dart';
-import '../../mobile_app/signup_form.dart';
-//import '../../user_registration/social_signup.dart';
+import 'package:watcher_app/controllers/background.dart';
+import 'signup_theme.dart';
+import 'signup_form.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -23,12 +22,12 @@ class SignUpScreen extends StatelessWidget {
               Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     SizedBox(
                       width: 450,
-                      child: SignUpForm(),
+                      child: SignupForm(),
                     ),
-                    SizedBox(height: defaultPadding / 2),
+                    const SizedBox(height: defaultPadding / 2),
                     // SocialSignUp()
                   ],
                 ),
@@ -53,13 +52,13 @@ class MobileSignupScreen extends StatelessWidget {
       children: <Widget>[
         const SignUpScreenTopImage(),
         Row(
-          children: const [
-            Spacer(),
+          children: [
+            const Spacer(),
             Expanded(
               flex: 8,
-              child: SignUpForm(),
+              child: SignupForm(),
             ),
-            Spacer(),
+            const Spacer(),
           ],
         ),
         // const SocialSignUp()
@@ -67,4 +66,3 @@ class MobileSignupScreen extends StatelessWidget {
     );
   }
 }
-
