@@ -3,7 +3,7 @@ import 'package:watcher_app/constants.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:watcher_app/controllers/screen.dart';
 import 'package:watcher_app/screens/auth/auth_bloc.dart';
-import 'package:watcher_app/screens/sidebar.dart';
+import 'package:watcher_app/screens/topbar.dart';
 import 'have_account.dart';
 import 'login_screen.dart';
 
@@ -25,7 +25,7 @@ class SignupForm extends StatelessWidget {
         if (state is SuccessState) {
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (context) => const Sidebar(),
+              builder: (context) => const TopBar(),
             ),
           );
         }

@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,12 +8,10 @@ import 'package:watcher_app/screens/welcome/welcome_screen.dart';
 import 'package:watcher_app/screens/auth/firebase_auth_service.dart';
 import 'package:watcher_app/screens/auth/auth_bloc.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  AuthenticationService.intializeService();
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      statusBarIconBrightness: Brightness.dark,
-      statusBarColor: Colors.transparent));
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 

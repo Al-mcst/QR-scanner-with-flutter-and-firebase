@@ -33,23 +33,23 @@ class AuthenticationService implements AuthService {
     return UserEntity.fromJson(map);
   }
 
-  static Future intializeService() async {
-    //Lets call this init method from main function before runApp function call
-    //For web app we need to initialize it differently
-    if (kIsWeb) {
-      await Firebase.initializeApp(
-          options: const FirebaseOptions(
-              apiKey: "AIzaSyBVILpYyGjuApinzc6gi1ld83Lz039aO74",
-              authDomain: "watcherapp-b57f2.firebaseapp.com",
-              projectId: "watcherapp-b57f2",
-              storageBucket: "watcherapp-b57f2.appspot.com",
-              messagingSenderId: "517192705819",
-              appId: "1:517192705819:web:d174bbcf56b25cedf6d5be",
-              measurementId: "G-09Q7W411LJ"));
-    } else {
-      await Firebase.initializeApp();
-    }
-  }
+  // static Future intializeService() async {
+  //   //Lets call this init method from main function before runApp function call
+  //   //For web app we need to initialize it differently
+  //   if (kIsWeb) {
+  //     await Firebase.initializeApp(
+  //         options: const FirebaseOptions(
+  //             apiKey: "AIzaSyAucWpV-QfX4W9lD45aLcIGIpwIZKm6bDI",
+  //             authDomain: "watcher-5cf14.firebaseapp.com",
+  //             projectId: "watcher-5cf14",
+  //             storageBucket: "watcher-5cf14.appspot.com",
+  //             messagingSenderId: "466249108854",
+  //             appId: "1:466249108854:web:d9518b83dfd1d5311cfe57",
+  //             measurementId: "G-KFCNQFP9T9"));
+  //   } else {
+  //     await Firebase.initializeApp();
+  //   }
+  // }
 
   Future signOut() async {
     await _firebaseAuth.signOut();
@@ -117,4 +117,6 @@ class AuthenticationService implements AuthService {
         return AuthError.error;
     }
   }
+
+  static void intializeService() {}
 }

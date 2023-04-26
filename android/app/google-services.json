@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "517192705819",
-    "firebase_url": "https://watcherapp-b57f2-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "watcherapp-b57f2",
-    "storage_bucket": "watcherapp-b57f2.appspot.com"
+    "project_number": "466249108854",
+    "project_id": "watcher-5cf14",
+    "storage_bucket": "watcher-5cf14.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:517192705819:android:640d69da2d6aa80ff6d5be",
+        "mobilesdk_app_id": "1:466249108854:android:7f00964d4f69008c1cfe57",
         "android_client_info": {
           "package_name": "com.example.watcher_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "517192705819-j4jgs45allnmrv7i2ufisqa9icp2sm6s.apps.googleusercontent.com",
+          "client_id": "466249108854-a010ktnocjln29k0o5o6tuefe1d2hfmn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAoNMzA4iCz1CKSM-BTE9QGreHSCVlaaXo"
+          "current_key": "AIzaSyAiFfxHO56Gi5Ca6po2vVS03_4jXFy5lJY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "517192705819-j4jgs45allnmrv7i2ufisqa9icp2sm6s.apps.googleusercontent.com",
+              "client_id": "466249108854-a010ktnocjln29k0o5o6tuefe1d2hfmn.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "517192705819-n9tj3nenh50gnr54n5on4v25ubpttb0j.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.watcherApp"
-              }
             }
           ]
         }
