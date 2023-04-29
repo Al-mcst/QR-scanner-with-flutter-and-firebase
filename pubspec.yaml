@@ -45,6 +45,12 @@ dependencies:
   qr_flutter: ^3.2.0
   encrypt: ^5.0.1
   qrscan: ^0.3.3
+  open_street_map_search_and_pick: ^0.0.16
+  geolocator: ^9.0.2
+  location: ^4.4.0
+  flutter_map: ^3.0.0
+  http: ^0.13.5
+  latlong2: ^0.8.1
 
 dev_dependencies:
   flutter_test:
