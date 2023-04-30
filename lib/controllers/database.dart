@@ -25,7 +25,7 @@ class DatabaseService {
       {required String email, required String password}) async {
     try {
       CollectionReference users =
-          FirebaseFirestore.instance.collection('employee');
+          FirebaseFirestore.instance.collection('user');
       final snapshot = await users.doc(email).get();
       final data = snapshot.data() as Map<String, dynamic>;
       return data['name'];

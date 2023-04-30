@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:watcher_app/screens/welcome/welcome_screen.dart';
-import 'package:watcher_app/screens/location/location_screen.dart';
+import 'package:watcher_app/screens/location/get_location.dart';
 
 class TopBar extends StatelessWidget with PreferredSizeWidget {
   const TopBar({super.key});
